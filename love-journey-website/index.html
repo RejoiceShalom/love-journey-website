@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Love Journey</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#gallery">Photo Gallery</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to our love journey website!</p>
+        </section>
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>I met her on a summer day in May 2007 for the first time. 
+                We had a litte conversation beside the roads. I feel something special 
+                at that moment and a feeling which I cannot express exactly. 
+                But it takes 12 years to get connected each other again. 
+                We met on a rainy day in September 2019 on facebook Messanger, 
+                and from that moment, our lives changed forever...</p>
+        </section>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <img src="images/photo1.jpg" alt="A memorable moment">
+            <img src="images/photo2.jpg" alt="Another memorable moment">
+        </section>
+        <section id="milestones">
+            <h2>Milestones</h2>
+            <ul>
+                <li>September 2019: get connected on Messanger</li>
+                <li>June 2022: Make a proposal</li>
+                <li>October 2022: She received my love</li>
+                <li>June 2022: Met for the first time in Norway</li>
+                <li>July 2020: A challenge trip together in Trolltunge in Norway. Marriage proposal was happened in Trolltunga. She said YES.</li>
+                <li>December 2021: Moved in together</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Love Journey</p>
+    </footer>
+    <script>
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>
